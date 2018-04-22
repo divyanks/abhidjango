@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<HTML>
+<HEAD>
+  <link rel='stylesheet' type="text/css" href="{% static 'login/login.css' %}">
+</HEAD>
+<BODY>
+<H1>login</H1>
+
+<FORM action="{% url 'loginpost' %}" method="post">
+  {% csrf_token %}
+    {{ form.as_table}}
+    <INPUT TYPE="submit" value='login'>
+</FORM>
+
+</BODY>
+</HTML>
