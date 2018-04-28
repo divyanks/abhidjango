@@ -17,15 +17,15 @@ class user(models.Model):
 
 
 #datatable models
-#class Datatable(models.Model):
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
-#    someAttr = models.CharField()
+class Datatable(models.Model):
+    someAttr1 = models.CharField(max_length=30)
+    someAttr2 = models.CharField(max_length=30)
+    someAttr3 = models.CharField(max_length=30)
+    someAttr4 = models.CharField(max_length=30)
+    someAttr5 = models.CharField(max_length=30)
+    someAttr6 = models.CharField(max_length=30)
+    someAttr7 = models.CharField(max_length=30)
+    someAttr8 = models.CharField(max_length=30)
+    someAttr9 = models.CharField(max_length=30)
+    someAttr10 = models.CharField(max_length=30)
+    someAttr11 = models.CharField(max_length=30)

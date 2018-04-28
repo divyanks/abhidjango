@@ -21,8 +21,8 @@ def loginpost(request):
             user1, loggedIn = user.isLoggedIn(email, password)
             print(user1,loggedIn)
             if loggedIn:
-                #object_list = Datatable.objects.all() #or any kind of queryset
-                #json = serializers.serialize('json', object_list)
+                object_list = Datatable.objects.all() #or any kind of queryset
+                json = serializers.serialize('json', object_list)
                 return render(request,"login/home.html",user1)
             else:
                 return render(request,"login/index.html" )
