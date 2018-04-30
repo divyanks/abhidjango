@@ -3,7 +3,8 @@ from django.http import HttpResponse
 from django.core import serializers
 from django.template import loader
 from .form import loginForm
-from .models import user
+from .models import user, Datatable
+import json
 
 #from .forms import CommentForm
 
@@ -22,7 +23,9 @@ def loginpost(request):
             print(user1,loggedIn)
             if loggedIn:
                 object_list = Datatable.objects.all() #or any kind of queryset
-                json = serializers.serialize('json', object_list)
-                return render(request,"login/home.html",user1)
+                #json1 = serializers.serialize('json', object_list)
+                #json1 = json.loads(json1)
+                print(object_list)
+                return render(request,"login/home.html",{'user1':user1,'object_list':object_list})
             else:
                 return render(request,"login/index.html" )

@@ -19,13 +19,14 @@
 
 <script type="text/javascript" charset="utf8" src="{% static 'login/loginjs/jquery.datatable.js' %}"></script>
 <script type="text/javascript" charset="utf-8" src="{% static 'login/loginjs/loginjs.js' %}"></script>
+<script type="text/javascript" charset="utf-8" src="{% static 'login/loginjs/json.js' %}"></script>
 
   <link rel='stylesheet' type="text/css" href="{% static 'login/logout.css' %}">
 </head>
 <body>
  <div class='container-fluid well text-left span12'>
    <div class='container-fluid '>
-    <h1>{{ user1 }} OOKLA<h1>
+    <h1>OOKLA<h1>
     </div>
 
     <div class='container-fluid '>
@@ -88,37 +89,29 @@
         </tr>
     </thead>
     <tbody>
+      {% for i in object_list %}
         <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 3</td>
-            <td>Row 1 Data 4</td>
-            <td>Row 1 Data 5</td>
-            <td>Row 1 Data 6</td>
-            <td>Row 1 Data 7</td>
-            <td>Row 1 Data 8</td>
-            <td>Row 1 Data 9</td>
-            <td>Row 1 Data 10</td>
-            <td>Row 1 Data 11</td>
+            <td>{{i.someAttr1}}</td>
+            <td>{{i.someAttr2}}</td>
+            <td>{{i.someAttr3}}</td>
+            <td>{{i.someAttr4}}</td>
+            <td>{{i.someAttr5}}</td>
+            <td>{{i.someAttr6}}</td>
+            <td>{{i.someAttr7}}</td>
+            <td>{{i.someAttr8}}</td>
+            <td>{{i.someAttr9}}</td>
+            <td>{{i.someAttr10}}</td>
+            <td>{{i.someAttr11}}</td>
         </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-        </tr>
+        {% endfor %}
+
     </tbody>
 </table>
     </div>
 
-    <div class='container'>
+    <div class='container' id='demo'>
+
+    
     </div>
 
 
