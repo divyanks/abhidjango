@@ -29,3 +29,7 @@ def loginpost(request):
                 return render(request,"login/home.html",{'user1':user1,'object_list':object_list})
             else:
                 return render(request,"login/index.html" )
+
+#speedometer logic
+def speedometer(request):
+    return render(request,"login/speedometer.html")
