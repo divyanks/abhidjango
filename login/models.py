@@ -14,3 +14,18 @@ class user(models.Model):
         check = user.objects.filter(email=email,password=password)
         user1 = check.first().__dict__
         return user1, check.count()
+
+
+#datatable models
+class Datatable(models.Model):
+    someAttr1 = models.CharField(max_length=30)
+    someAttr2 = models.CharField(max_length=30)
+    someAttr3 = models.CharField(max_length=30)
+    someAttr4 = models.CharField(max_length=30)
+    someAttr5 = models.CharField(max_length=30)
+    someAttr6 = models.CharField(max_length=30)
+    someAttr7 = models.CharField(max_length=30)
+    someAttr8 = models.CharField(max_length=30)
+    someAttr9 = models.CharField(max_length=30)
+    someAttr10 = models.CharField(max_length=30)
+    someAttr11 = models.CharField(max_length=30)
