@@ -1,4 +1,4 @@
- # abhidjango
+  # abhidjango
 #requirement-
 	<h3>1#) python3</h3>
 	<h3>2#)django</h3>
@@ -10,7 +10,7 @@ $docker-compose up
 
 
 #first time run<br/>
-1-$docker exec <web-container-id> bash
+1- $docker exec <web-container-id> bash
 	|<br/>
 	|_<br/>
 	  #python3 manage.py migrate <br/>
@@ -18,5 +18,5 @@ $docker-compose up
  now add new user entry and datatable entry in http://0.0.0.0/8000/admin <br/>
 
 2-open http://0.0.0.0/8000/login
-=======
+
 
