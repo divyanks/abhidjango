@@ -7,7 +7,7 @@
 
 TO run server -
 $docker-compose up
-<<<<<<< HEAD
+
 
 #first time run
 1-$docker exec <web-container-id> bash
@@ -19,4 +19,4 @@ $docker-compose up
 
 2-open http://0.0.0.0/8000/login
 =======
->>>>>>> 1f6b2b35f746347c0fa15ff24f18e88e0ec6aeb2
+
