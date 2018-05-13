@@ -1,20 +1,9 @@
-# docker build -t ubuntu1604py36
-FROM ubuntu:16.04
-
-RUN apt-get update
-RUN apt-get install -y software-properties-common vim
-RUN add-apt-repository ppa:jonathonf/python-3.6
-RUN apt-get update
-
-RUN apt-get install -y build-essential python3.6 python3.6-dev python3-pip python3.6-venv
-RUN apt-get install -y git
-
-# update pip
-RUN python3.6 -m pip install pip --upgrade
-RUN python3.6 -m pip install wheel
-RUN python3.6 -m pip install django
-ADD ./ ./
-CMD ['python3.6','./djangoproj/manage.py','runserver']
-
-
-EXPOSE 8000
+FROM python:3
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /djangoproj
+WORKDIR /djangoproj
+ADD requirements.txt /djangoproj/
+RUN pip install django
+RUN pip install psycopg2
+RUN pip install psycopg2-binary
+ADD . /djangoproj/
