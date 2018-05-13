@@ -6,5 +6,14 @@
 
 
 TO run server -
-$python manange.py runserver
-#python 3 should be required
+$docker-compose up
+
+#first time run
+1-$docker exec <web-container-id> bash
+	|
+	|_
+	  #python3 manage.py migrate
+	  #python3 manage.py createsuperuser
+ now add new user entry and datatable entry in http://0.0.0.0/8000/admin
+
+2-open http://0.0.0.0/8000/login
