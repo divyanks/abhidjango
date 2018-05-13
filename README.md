@@ -1,4 +1,4 @@
-# abhidjango
+ # abhidjango
 #requirement-
 	<h3>1#) python3</h3>
 	<h3>2#)django</h3>
@@ -9,13 +9,13 @@ TO run server -
 $docker-compose up
 
 
-#first time run
+#first time run<br/>
 1-$docker exec <web-container-id> bash
-	|
-	|_
-	  #python3 manage.py migrate
-	  #python3 manage.py createsuperuser
- now add new user entry and datatable entry in http://0.0.0.0/8000/admin
+	|<br/>
+	|_<br/>
+	  #python3 manage.py migrate <br/>
+	  #python3 manage.py createsuperuser <br/>
+ now add new user entry and datatable entry in http://0.0.0.0/8000/admin <br/>
 
 2-open http://0.0.0.0/8000/login
 =======
