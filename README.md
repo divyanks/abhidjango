@@ -6,5 +6,4 @@
 
 
 TO run server -
-$python manange.py runserver
-#python 3 should be required
+$docker-compose up
