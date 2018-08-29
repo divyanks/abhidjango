@@ -4,7 +4,7 @@ $docker-compose up
 
 
 #first time run<br/>
-1- $docker exec <web-container-id> bash
+1- $docker exec <web-container-id> bash<br/>
 	&nbsp;&nbsp;&nbsp;|<br/>
 	&nbsp;&nbsp;&nbsp;|_<br/>
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#python3 manage.py migrate <br/>
